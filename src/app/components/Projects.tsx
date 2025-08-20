@@ -2,6 +2,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { ExternalLink, Github } from "lucide-react"; // icons
 import phonestore from "../images/phonestore.png";
 import airoom from "../images/airoom.png";
 import Image from "next/image";
@@ -15,7 +17,6 @@ function Projects() {
   return (
     <div id="projects" className="py-20 px-6">
       <div className="container mx-auto max-w-6xl">
-        {/* Added gap-12 for horizontal spacing and space-y-12 for vertical spacing on mobile */}
         <div className="space-y-20">
           {/* Project 1: Phone Store */}
           <motion.div
@@ -39,13 +40,12 @@ function Projects() {
               <p className="text-muted-foreground mb-6 leading-relaxed">
                 A full-stack eCommerce application with product listings, a
                 cart, secure checkout, and a comprehensive admin dashboard. It
-                uses a React.js front end with Tailwind CSS for a
-                responsive UI and Swiper.js for interactive product
-                displays. The backend is built with Node.js and
-                Express.js, using a MongoDB database to manage products,
-                users, and orders.
+                uses a React.js front end with Tailwind CSS for a responsive UI
+                and Swiper.js for interactive product displays. The backend is
+                built with Node.js and Express.js, using a MongoDB database to
+                manage products, users, and orders.
               </p>
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-2 mb-6">
                 <Badge variant="secondary">React.js</Badge>
                 <Badge variant="secondary">Tailwind CSS</Badge>
                 <Badge variant="secondary">JWT</Badge>
@@ -53,6 +53,30 @@ function Projects() {
                 <Badge variant="secondary">Express.js</Badge>
                 <Badge variant="secondary">Node.js</Badge>
                 <Badge variant="secondary">MongoDB</Badge>
+              </div>
+
+              {/* Buttons */}
+              <div className="flex gap-4">
+                <Button asChild>
+                  <a
+                    href="https://vercel-phonestore-8yata8h9j-aditya-bankeys-projects.vercel.app/" // replace with your demo link
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <ExternalLink className="w-4 h-4 mr-2" />
+                    View Demo
+                  </a>
+                </Button>
+                <Button variant="outline" asChild>
+                  <a
+                    href="https://github.com/ADITYABANKEY07/vercel-phonestore" // replace with repo link
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Github className="w-4 h-4 mr-2" />
+                    Visit GitHub
+                  </a>
+                </Button>
               </div>
             </motion.div>
 
@@ -97,13 +121,37 @@ function Projects() {
                 single click, showcasing the integration of Drizzle, Neon, and
                 Clerk for a seamless experience.
               </p>
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-2 mb-6">
                 <Badge variant="secondary">React.js</Badge>
                 <Badge variant="secondary">Tailwind CSS</Badge>
                 <Badge variant="secondary">Replicate AI</Badge>
                 <Badge variant="secondary">Drizzle</Badge>
                 <Badge variant="secondary">Neon</Badge>
                 <Badge variant="secondary">Clerk</Badge>
+              </div>
+
+              {/* Buttons */}
+              <div className="flex gap-4">
+                <Button asChild>
+                  <a
+                    href="#home" // replace with your demo link
+                    // target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <ExternalLink className="w-4 h-4 mr-2" />
+                    View Demo
+                  </a>
+                </Button>
+                <Button variant="outline" asChild>
+                  <a
+                    href="#home" // replace with repo link
+                    // target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Github className="w-4 h-4 mr-2" />
+                    Visit GitHub
+                  </a>
+                </Button>
               </div>
             </motion.div>
 
