@@ -10,10 +10,10 @@ function About() {
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          viewport={{ once: true }} // animate only once
+          viewport={{ once: true }}
           className="text-3xl font-bold font-space-grotesk mb-4 text-center"
         >
-          Im a Software Engineer.
+          I'm a Full Stack Developer.
         </motion.h2>
 
         <motion.p
@@ -21,23 +21,29 @@ function About() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
           viewport={{ once: true }}
-          className="text-center text-muted mb-2"
+          className="text-center text-muted mb-6"
         >
-          Currently, Im a Software Engineer at
-          <span className="text-accent"> TechStack</span>
+          Skilled in{" "}
+          <span className="text-accent">
+            React.js, Node.js, Express.js, MongoDB, and Tailwind CSS
+          </span>
+          , I build responsive, user-friendly, and scalable web applications.
         </motion.p>
 
         <motion.div
-          initial={{ opacity: 0, y: 50 }}
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
+          transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
           viewport={{ once: true }}
-          className="max-w-2xl mx-auto text-center mt-12"
+          className="max-w-2xl mx-auto text-center"
         >
           <p className="text-muted-foreground leading-relaxed">
-            A self-taught UI/UX designer - functioning in the industry for 3+
-            years now. I make meaningful and delightful digital products that
-            create an equilibrium between user needs and business goals.
+            Notable projects include\
+            <span className="font-semibold"> PhoneStore</span> (an eCommerce web app
+            with Razorpay integration) and an
+            <span className="font-semibold"> AI-Powered Interior Design Generator</span>
+            . I enjoy making clean UI with solid backend architecture to
+            create impactful digital products.
           </p>
         </motion.div>
       </div>
