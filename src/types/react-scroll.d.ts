@@ -14,4 +14,9 @@ declare module "react-scroll" {
   }
 
   export class Link extends React.Component<LinkProps> {}
+
+  export const scroller: any;
+  export const animateScroll: any;
+  export const Events: any;
+  export const Element: any;
 }
