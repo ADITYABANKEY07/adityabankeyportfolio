@@ -9,29 +9,28 @@ const typewriter = {
   visible: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.05,
-      delayChildren: 0.5,
+      staggerChildren: 0.03, // faster typing
+      delayChildren: 0.1, // almost no initial delay
     },
   },
 };
 
 const charAnimation = {
-  hidden: { opacity: 0, y: 10 },
-  visible: { opacity: 1, y: 0 },
+  hidden: { opacity: 0, y: 6 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.2 } },
 };
 
 function HeroSection() {
   const text = "Full Stack Developer";
 
-
   return (
-    <section id="home" className="pt-32 pb-20 px-6">
+    <div id="home" className="pt-32 pb-20 px-6">
       <div className="container mx-auto max-w-4xl text-center">
         {/* Intro Text */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.6 }}
           viewport={{ once: true, amount: 0.6 }}
           className="mb-8"
         >
@@ -45,7 +44,7 @@ function HeroSection() {
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1, delay: 0.2, type: "spring" }}
+            transition={{ duration: 0.8, delay: 0.1, type: "spring" }}
             viewport={{ once: true }}
             className="relative"
           >
@@ -59,7 +58,6 @@ function HeroSection() {
               className="w-48 h-48 rounded-full bg-gradient-to-br from-primary to-accent p-1 glow-effect shadow-xl"
             >
               <div className="w-full h-full rounded-full bg-card flex items-center justify-center">
-                {/* Replaced Image with a generic SVG avatar to avoid import errors */}
                 <Image
                   src={avatar}
                   width={200}
@@ -91,13 +89,14 @@ function HeroSection() {
                 </motion.span>
               ))}
             </motion.h1>
-            {/* Flex container for the buttons */}
-            <div className="flex flex-col sm:flex-row justify-center gap-4 mt-6">
-              {/* Corrected Contact Me Button */}
+
+            {/* Buttons */}
+            <div className="flex flex-row justify-center gap-4 mt-6">
+              {/* Contact Me Button */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 1.8 }}
+                transition={{ duration: 0.5, delay: 1 }}
               >
                 <a
                   href="#contact"
@@ -115,7 +114,7 @@ function HeroSection() {
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 1.8 }}
+                transition={{ duration: 0.5, delay: 1.2 }}
               >
                 <a
                   href="/AdityaBankeyResume.pdf"
@@ -133,7 +132,7 @@ function HeroSection() {
           </motion.div>
         </div>
       </div>
-    </section>
+    </div>
   );
 }
 

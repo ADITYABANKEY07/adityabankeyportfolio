@@ -1,15 +1,38 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import {Card} from "@/components/ui/card"; // ✅ default import (avoid export * issue)
-import {Badge} from "@/components/ui/badge";
+import { Card } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogDescription,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 
 function Experience() {
-  // animation variants for cards
   const cardVariants = {
     hidden: { opacity: 0, y: 10 },
     visible: { opacity: 1, y: 0 },
   };
+
+  const experiences = [
+    {
+      title: "Full Stack Developer Intern",
+      company: "InciLo Logistics Private Limited • Bhopal",
+      duration: "09/2024 - 12/2024",
+      description: [
+        "Contributed to both frontend development and system enhancements, ensuring responsive and intuitive user experiences.",
+        "Developed dynamic web interfaces using HTML, CSS, and JavaScript, with component-based architecture in ReactJS.",
+        "Collaborated with backend teams to integrate APIs and ensure seamless frontend-backend communication.",
+        "Performed debugging and testing to identify and fix issues, optimizing application performance and usability.",
+        "Participated in cross-functional team discussions to align design, functionality, and business goals.",
+        "Used Git for version control, managing code changes efficiently in a collaborative environment.",
+      ],
+    },
+  ];
 
   return (
     <div id="experience" className="py-20 px-6">
@@ -24,42 +47,68 @@ function Experience() {
           Work Experience
         </motion.h2>
 
-        <div className="grid md:grid-cols-2 gap-6">
-          {[1, 2, 3, 4].map((item, index) => (
-            <motion.div
-              key={item}
-              variants={cardVariants}
-              initial="hidden"
-              whileInView="visible"
-              transition={{
-                duration: 0.8,
-                ease: "easeOut",
-                delay: index * 0.2, // stagger cards
-              }}
-              viewport={{ once: true }}
-            >
-              <Card className="bg-card border-border/20 p-6 hover:border-accent/50 transition-all duration-300 group">
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-lg bg-primary/20 flex items-center justify-center group-hover:bg-accent/20 transition-colors">
-                    <div className="w-6 h-6 rounded bg-accent"></div>
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="font-semibold font-space-grotesk mb-2">
-                      CIB on the Mobile
-                    </h3>
-                    <p className="text-sm text-muted-foreground mb-3">
-                      Take your client onboard seamlessly by our amazing tool of
-                      digital onboard process.
-                    </p>
-                    <Badge variant="secondary" className="text-xs">
-                      LEARN MORE
-                    </Badge>
-                  </div>
-                </div>
-              </Card>
-            </motion.div>
-          ))}
-        </div>
+<div
+  className={`grid gap-6 justify-center ${
+    experiences.length === 1
+      ? "grid-cols-1 place-items-center" // ✅ single card centered
+      : "sm:grid-cols-2 lg:grid-cols-3" // ✅ auto layout for 2+ cards
+  }`}
+>
+  {experiences.map((item, index) => (
+    <motion.div
+      key={index}
+      variants={cardVariants}
+      initial="hidden"
+      whileInView="visible"
+      transition={{
+        duration: 0.8,
+        ease: "easeOut",
+        delay: index * 0.2,
+      }}
+      viewport={{ once: true }}
+      className="w-full max-w-md" // ✅ keeps each card a nice width
+    >
+      <Dialog>
+        <DialogTrigger asChild>
+          <Card className="cursor-pointer bg-card border-border/20 p-6 hover:border-accent/50 transition-all duration-300 group">
+            <div className="flex items-start gap-4">
+              <div className="w-12 h-12 rounded-lg bg-primary/20 flex items-center justify-center group-hover:bg-accent/20 transition-colors">
+                <div className="w-6 h-6 rounded bg-accent"></div>
+              </div>
+              <div className="flex-1">
+                <h3 className="font-semibold font-space-grotesk mb-2">
+                  {item.title}
+                </h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  {item.company}
+                </p>
+                <Badge variant="secondary" className="text-xs">
+                  VIEW DETAILS
+                </Badge>
+              </div>
+            </div>
+          </Card>
+        </DialogTrigger>
+
+        {/* Dialog Content */}
+        <DialogContent className="max-w-2xl">
+          <DialogHeader>
+            <DialogTitle>{item.title}</DialogTitle>
+            <DialogDescription>
+              {item.company} • {item.duration}
+            </DialogDescription>
+          </DialogHeader>
+          <ul className="list-disc pl-5 space-y-2 text-sm text-muted-foreground">
+            {item.description.map((point, i) => (
+              <li key={i}>{point}</li>
+            ))}
+          </ul>
+        </DialogContent>
+      </Dialog>
+    </motion.div>
+  ))}
+</div>
+
       </div>
     </div>
   );
