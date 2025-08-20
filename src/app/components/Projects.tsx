@@ -37,7 +37,13 @@ function Projects() {
                 PhoneStore – eCommerce Web Application
               </h3>
               <p className="text-muted-foreground mb-6 leading-relaxed">
-                A full-stack eCommerce application with product listings, a cart, secure checkout, and a comprehensive admin dashboard. It uses a **React.js** front end with **Tailwind CSS** for a responsive UI and **Swiper.js** for interactive product displays. The backend is built with **Node.js** and **Express.js**, using a **MongoDB** database to manage products, users, and orders.
+                A full-stack eCommerce application with product listings, a
+                cart, secure checkout, and a comprehensive admin dashboard. It
+                uses a React.js front end with Tailwind CSS for a
+                responsive UI and Swiper.js for interactive product
+                displays. The backend is built with Node.js and
+                Express.js, using a MongoDB database to manage products,
+                users, and orders.
               </p>
               <div className="flex flex-wrap gap-2">
                 <Badge variant="secondary">React.js</Badge>
