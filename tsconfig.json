@@ -27,7 +27,8 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "src/types/**/*.d.ts"   // 👈 add this line
+    "src/react-scroll.d.ts"
   ],
+
   "exclude": ["node_modules"]
 }
