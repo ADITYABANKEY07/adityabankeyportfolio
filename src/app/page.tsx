@@ -1,8 +1,3 @@
-import { Button } from "@/components/ui/button"
-import { Card } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import avatar from "./images/avatar.png"
-import Image from "next/image"
 import HeroSection from "./components/HeroSection"
 import Navbar from "./components/Navbar"
 import About from "./components/About"
