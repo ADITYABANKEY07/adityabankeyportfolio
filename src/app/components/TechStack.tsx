@@ -69,7 +69,7 @@ function TechStack() {
           Im currently looking to join a
           <span className="text-accent"> cross-functional</span> team
           <br />
-          that values improving people's lives through accessible design
+          that values improving peoples lives through accessible design
         </motion.p>
         {/* Tech */}
         <motion.div
