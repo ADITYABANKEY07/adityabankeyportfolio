@@ -66,12 +66,11 @@ function TechStack() {
           viewport={{ once: true }}
           className="text-muted mb-8"
         >
-          I'm currently looking to join a{" "}
-          <span className="text-accent">cross-functional</span> team
+          Im currently looking to join a
+          <span className="text-accent"> cross-functional</span> team
           <br />
           that values improving people's lives through accessible design
         </motion.p>
-        {/* Tech */}
         {/* Tech */}
         <motion.div
           className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6 justify-items-center"

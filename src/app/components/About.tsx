@@ -13,7 +13,7 @@ function About() {
           viewport={{ once: true }} // animate only once
           className="text-3xl font-bold font-space-grotesk mb-4 text-center"
         >
-          I'm a Software Engineer.
+          Im a Software Engineer.
         </motion.h2>
 
         <motion.p
@@ -23,8 +23,8 @@ function About() {
           viewport={{ once: true }}
           className="text-center text-muted mb-2"
         >
-          Currently, I'm a Software Engineer at{" "}
-          <span className="text-accent">TechStack</span>
+          Currently, Im a Software Engineer at
+          <span className="text-accent"> TechStack</span>
         </motion.p>
 
         <motion.div
