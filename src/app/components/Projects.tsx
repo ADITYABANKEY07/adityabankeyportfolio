@@ -5,7 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github } from "lucide-react"; // icons
 import phonestore from "../images/phonestore.png";
-import airoom from "../images/airoom.png";
+import tsm from "../images/taskmanager.png";
 import Image from "next/image";
 
 function Projects() {
@@ -95,7 +95,7 @@ function Projects() {
             </motion.div>
           </motion.div>
 
-          {/* Project 2: AI Room */}
+          {/* Project 2: Task Management App */}
           <motion.div
             className="grid lg:grid-cols-2 gap-12 items-center space-y-8 lg:space-y-0"
             variants={fadeUp}
@@ -112,40 +112,43 @@ function Projects() {
               <Badge variant="outline" className="mb-4">
                 FEATURED PROJECT
               </Badge>
+
               <h3 className="text-2xl font-bold font-space-grotesk mb-4">
-                AI Room
+                Task Management App
               </h3>
+
               <p className="text-muted-foreground mb-6 leading-relaxed">
-                An interactive AI room application that leverages Replicate AI.
-                Users can transform normal rooms into furnished spaces with a
-                single click, showcasing the integration of Drizzle, Neon, and
-                Clerk for a seamless experience.
+                A full-stack Task Management application built using the MERN
+                stack. Users can create, update, delete, and track daily tasks
+                with status indicators like Pending, Completed, and Partial
+                Completed. The app includes authentication, user-specific task
+                handling, and a clean UI for efficient productivity management.
               </p>
+
               <div className="flex flex-wrap gap-2 mb-6">
+                <Badge variant="secondary">MongoDB</Badge>
+                <Badge variant="secondary">Express.js</Badge>
                 <Badge variant="secondary">React.js</Badge>
+                <Badge variant="secondary">Node.js</Badge>
+                <Badge variant="secondary">JWT</Badge>
                 <Badge variant="secondary">Tailwind CSS</Badge>
-                <Badge variant="secondary">Replicate AI</Badge>
-                <Badge variant="secondary">Drizzle</Badge>
-                <Badge variant="secondary">Neon</Badge>
-                <Badge variant="secondary">Clerk</Badge>
               </div>
 
               {/* Buttons */}
               <div className="flex gap-4">
                 <Button asChild>
                   <a
-                    href="#home" // replace with your demo link
-                    // target="_blank"
+                    href="https://task-manager-app-woad-ten.vercel.app/" // replace with your demo link
                     rel="noopener noreferrer"
                   >
                     <ExternalLink className="w-4 h-4 mr-2" />
                     View Demo
                   </a>
                 </Button>
+
                 <Button variant="outline" asChild>
                   <a
-                    href="#home" // replace with repo link
-                    // target="_blank"
+                    href="https://github.com/ADITYABANKEY07/mern_learn_library/tree/main/17_task_management" // replace with repo link
                     rel="noopener noreferrer"
                   >
                     <Github className="w-4 h-4 mr-2" />
@@ -162,8 +165,8 @@ function Projects() {
             >
               <div className="bg-card rounded-lg p-4 border border-border/20">
                 <Image
-                  src={airoom}
-                  alt="AI Room Project"
+                  src={tsm} // your task management image
+                  alt="Task Management App"
                   className="w-full rounded"
                 />
               </div>

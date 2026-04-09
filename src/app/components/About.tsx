@@ -13,7 +13,7 @@ function About() {
           viewport={{ once: true }}
           className="text-3xl font-bold font-space-grotesk mb-4 text-center"
         >
-          I'm a Full Stack Developer.
+          I'm a Full Stack MERN Developer.
         </motion.h2>
 
         <motion.p
@@ -25,9 +25,9 @@ function About() {
         >
           Skilled in{" "}
           <span className="text-accent">
-            React.js, Node.js, Express.js, MongoDB, and Tailwind CSS
+            MongoDB, Express.js, React.js, Node.js, JWT Authentication, RESTful APIs, and Tailwind CSS
           </span>
-          , I build responsive, user-friendly, and scalable web applications.
+          , I build scalable, responsive, and user-friendly web applications with clean UI and efficient backend systems.
         </motion.p>
 
         <motion.div
@@ -38,12 +38,9 @@ function About() {
           className="max-w-2xl mx-auto text-center"
         >
           <p className="text-muted-foreground leading-relaxed">
-            Notable projects include\
-            <span className="font-semibold"> PhoneStore</span> (an eCommerce web app
-            with Razorpay integration) and an
-            <span className="font-semibold"> AI-Powered Interior Design Generator</span>
-            . I enjoy making clean UI with solid backend architecture to
-            create impactful digital products.
+            Notable projects include{" "}
+            <span className="font-semibold">PhoneStore</span> (a full-stack eCommerce web application with Razorpay integration) and{" "}
+            <span className="font-semibold">Task Management App</span>, where users can create, manage, and track tasks with real-time status updates. I focus on building practical, real-world applications with strong functionality and clean design.
           </p>
         </motion.div>
       </div>
