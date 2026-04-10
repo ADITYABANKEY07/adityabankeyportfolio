@@ -10,7 +10,7 @@ import {
   SiMongodb,
   SiNextdotjs,
   SiTailwindcss,
-  SiPostgresql,
+  SiMysql,
   SiTypescript,
 } from "react-icons/si";
 
@@ -49,8 +49,8 @@ function TechStack() {
     },
     { name: "MongoDB", icon: <SiMongodb className="text-green-500 w-6 h-6" /> },
         {
-      name: "PostgreSQL",
-      icon: <SiPostgresql className="text-blue-600 w-6 h-6" />,
+      name: "MySQL",
+      icon: <SiMysql className="text-blue-600 w-6 h-6" />,
     },
     { name: "Figma", icon: <FaFigma className="text-pink-500 w-6 h-6" /> },
   ];

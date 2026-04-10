@@ -20,19 +20,21 @@ function Experience() {
 
   const experiences = [
     {
-      title: "Full Stack Developer Intern",
+      title: "Frontend Developer Intern",
       company: "InciLo Logistics Private Limited • Bhopal",
       duration: "09/2024 - 12/2024",
       description: [
-        "Developed responsive UI components using React.js with modern frontend practices.",
-        "Integrated REST APIs and ensured seamless frontend-backend communication.",
-        "Collaborated with backend teams to enhance system performance and usability.",
-        "Performed debugging and testing to optimize application functionality.",
-        "Used Git for version control and team collaboration.",
+        "Developed responsive and user-friendly UI components using React.js, HTML, CSS, and JavaScript.",
+        "Built reusable components using React’s component-based architecture to improve scalability.",
+        "Integrated frontend with backend APIs to fetch and display dynamic data efficiently.",
+        "Optimized UI performance and ensured mobile responsiveness across different devices.",
+        "Identified and fixed UI bugs through testing and debugging, improving user experience.",
+        "Collaborated with designers and backend developers to deliver visually consistent interfaces.",
+        "Used Git and GitHub for version control and team collaboration.",
       ],
     },
     {
-      title: "Full Stack Developer Trainee",
+      title: "Full Stack Developer Intern",
       company: "Cybrom Technology Pvt. Ltd. • Bhopal, Madhya Pradesh",
       duration: "08/2025 - 04/2026",
       description: [
