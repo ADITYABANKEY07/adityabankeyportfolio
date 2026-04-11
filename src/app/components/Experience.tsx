@@ -34,7 +34,7 @@ function Experience() {
       ],
     },
     {
-      title: "Full Stack Developer Intern",
+      title: "MERN Stack Trainee",
       company: "Cybrom Technology Pvt. Ltd. • Bhopal, Madhya Pradesh",
       duration: "08/2025 - 04/2026",
       description: [
