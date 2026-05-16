@@ -34,9 +34,9 @@ function Experience() {
       ],
     },
     {
-      title: "MERN Stack Trainee",
+      title: "MERN Stack Intern",
       company: "Cybrom Technology Pvt. Ltd. • Bhopal, Madhya Pradesh",
-      duration: "08/2025 - 04/2026",
+      duration: "08/2025 - 05/2026",
       description: [
         "Completed hands-on training in MongoDB, Express.js, React.js, and Node.js (MERN Stack).",
         "Developed full-stack web applications with authentication and RESTful API integration.",
