@@ -39,7 +39,7 @@ function About() {
         >
           <p className="text-muted-foreground leading-relaxed">
             Notable projects include{" "}
-            <span className="font-semibold">PhoneStore</span> (a full-stack eCommerce web application with Razorpay integration) and{" "}
+            <span className="font-semibold">BaseLayerCase</span> (a full-stack eCommerce web application with Razorpay integration) and{" "}
             <span className="font-semibold">Task Management App</span>, where users can create, manage, and track tasks with real-time status updates. I focus on building practical, real-world applications with strong functionality and clean design.
           </p>
         </motion.div>
