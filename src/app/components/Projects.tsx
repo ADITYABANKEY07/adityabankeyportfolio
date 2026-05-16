@@ -59,7 +59,7 @@ function Projects() {
               <div className="flex gap-4">
                 <Button asChild>
                   <a
-                    href="https://vercel-phonestore-8yata8h9j-aditya-bankeys-projects.vercel.app/" // replace with your demo link
+                    href="#" // replace with your demo link
                     target="_blank"
                     rel="noopener noreferrer"
                   >
