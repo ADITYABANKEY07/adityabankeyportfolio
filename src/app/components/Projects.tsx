@@ -65,7 +65,7 @@ function Projects() {
     <div className="flex gap-4">
       <Button asChild>
         <a
-          href="#" // replace with your demo link
+          href="https://blc-ecom.vercel.app/" // replace with your demo link
           target="_blank"
           rel="noopener noreferrer"
         >
